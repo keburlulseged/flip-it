@@ -1,6 +1,6 @@
 import DashboardNav from "../components/DashboardNav";
 
-const Dashboard = () => {
+const DashboardSeller = () => {
   return (
     <>
       <div className="container-fluid bg-secondary p-5">
@@ -10,9 +10,11 @@ const Dashboard = () => {
       <div className="container-fluid p-4">
         <DashboardNav />
       </div>
-      <div className="container"></div>
+      <div className="container">
+        <p>Show all hotels user has posted and button to add more</p>
+      </div>
     </>
   );
 };
 
-export default Dashboard;
+export default DashboardSeller;

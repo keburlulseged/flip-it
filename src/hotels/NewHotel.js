@@ -1,13 +1,13 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-function Home() {
+function NewHotel() {
   const {auth} = useSelector((state) => (
     {...state}
   ))
   return <div className="container-fluid h1 p-5 text-center">
-    Home Page 
+    New Hotel
     </div>;
 }
 
-export default Home;
+export default NewHotel;

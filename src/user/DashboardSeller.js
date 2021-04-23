@@ -16,6 +16,7 @@ const DashboardSeller = () => {
     try {
       let res = await createConnectAccount(auth.token);
       console.log(res);
+      window.location.href = res.data;
     } catch (err) {
       console.log(err);
       toast.error("Stripe connect failed, Try again");
@@ -55,7 +56,7 @@ const DashboardSeller = () => {
               onClick={handleClick}
               className="btn btn-primary mb-3"
             >
-             {loading ? <LoadingOutlined className="h1" /> : "Setup Payouts"}
+              {loading ? <LoadingOutlined className="h1" /> : "Setup Payouts"}
             </button>
             <p className="text-muted">
               <small>
